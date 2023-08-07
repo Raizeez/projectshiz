@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d6b35266d7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" id="closeMenu" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">COURCES</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" id="openMenu" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>BEST BUSINESS SCHOOL</h1>
+        <p>
+          Declared as the best business school of Province 1 by New Business Age
+        </p>
+        <a href="" class="hero-btn">Visit Us To know More</a>
+      </div>
+    </section>
+    <script type="module" src="/main.js"></script>
+
+    <!-- Javascript for toggle menu -->
+    <script>
+      var navlinks = document.getElementById("navLinks");
+      function showMenu() {
+        navlinks.style.right = "0";
+        console.log("ok");
+      }
+      function hideMenu() {
+        navlinks.style.right = "-200px";
+        console.log("ok");
+      }
+    </script>
+  </body>
+</html>
